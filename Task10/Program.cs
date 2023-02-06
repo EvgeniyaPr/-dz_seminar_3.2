@@ -6,12 +6,13 @@
 // 918 -> 1
 
 Console.WriteLine("Введите число: ");
-int a = Convert.ToInt32(Console.ReadLine());
+int number = Convert.ToInt32(Console.ReadLine());
 
-if (a > 99 && a < 1000)
+
+if (number>99 & number<1000)
 {
-    System.Console.WriteLine($"Вторая цифра числа {a}: " + a % 100);
+    System.Console.WriteLine($"Вторая цифра числа {number}: {(number / 10) % 10}");
 }
 else {
-    System.Console.WriteLine("Число не является трехзначным");
-}
+     System.Console.WriteLine("Число не является трехзначным");
+ }
